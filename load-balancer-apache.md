@@ -1,1 +1,1 @@
-please help
+i completely trust you lord
