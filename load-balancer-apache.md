@@ -1,1 +1,1 @@
-i complet
+i comp
