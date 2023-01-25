@@ -1,2 +1,1 @@
-
-dear lord
+oti sun mi
