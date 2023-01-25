@@ -1,1 +1,1 @@
-i completely trust you lord
+i completely trus
