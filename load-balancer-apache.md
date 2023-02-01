@@ -7,3 +7,7 @@ Make sure that you have the following servers installed and configured within Pr
 - Two RHEL8 Web Servers
 - One MySQL DB Server (based on Ubuntu 20.04)
 - One RHEL8 NFS server
+
+## STEP 1-CONFIGURE APACHE AS A LOAD BALANCER
+Configure Apache As A Load Balancer
+Create an Ubuntu Server 20.04 EC2 instance and name it Project-8-apache-lb, so your EC2 list will look like this:
