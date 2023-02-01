@@ -19,3 +19,24 @@ Create an Ubuntu Server 20.04 EC2 instance and name it Project-8-apache-lb, so y
 [](assets/1.png)
 
 Install Apache Load Balancer on Project-8-apache-lb server and configure it to point traffic coming to LB to both Web Servers:
+
+```
+#Install apache2
+sudo apt update
+sudo apt install apache2 -y
+sudo apt-get install libxml2-dev
+
+
+#Enable the following modules:
+sudo a2enmod rewrite
+sudo a2enmod proxy
+sudo a2enmod proxy_balancer
+sudo a2enmod proxy_http
+sudo a2enmod headers
+sudo a2enmod lbmethod_bytraffic
+
+
+#Restart apache2 service
+sudo systemctl restart apache2
+
+```
