@@ -9,7 +9,13 @@ Make sure that you have the following servers installed and configured within Pr
 - One RHEL8 NFS server
 
 ## STEP 1-CONFIGURE APACHE AS A LOAD BALANCER
-Configure Apache As A Load Balancer
+1. Configure Apache As A Load Balancer
 Create an Ubuntu Server 20.04 EC2 instance and name it Project-8-apache-lb, so your EC2 list will look like this:
+!
+[](assets/3.png)
 
-![](assets/3.png)
+2.Open TCP port 80 on Project-8-apache-lb by creating an Inbound Rule in the Security Group.
+
+[](assets/1.png)
+
+Install Apache Load Balancer on Project-8-apache-lb server and configure it to point traffic coming to LB to both Web Servers:
