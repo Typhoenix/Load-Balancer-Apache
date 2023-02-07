@@ -5,7 +5,7 @@ To simplify, let us implement this solution with 2 Web Servers, the approach wil
 ## Prerequisites
 Make sure that you have the following servers installed and configured within Project-7(Devops-Tooling-Websites)
 - Two RHEL8 Web Servers
-- One MySQL DB Server (based on Ubuntu 20.04).
+- One MySQL DB Server (based on Ubuntu 20.04)
 - One RHEL8 NFS server
 
 ## STEP 1-CONFIGURE APACHE AS A LOAD BALANCER
