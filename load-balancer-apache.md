@@ -30,7 +30,7 @@ sudo apt-get install libxml2-dev
 #Enable the following modules:
 sudo a2enmod rewrite
 sudo a2enmod proxy
-sudo a2enmod proxy_balancer
+sudo a2enmod proxy_balancer.
 sudo a2enmod proxy_http
 sudo a2enmod headers
 sudo a2enmod lbmethod_bytraffic
