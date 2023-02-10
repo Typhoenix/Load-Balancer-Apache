@@ -45,5 +45,5 @@ sudo systemctl restart apache2
 
 4. Configure load balancing
 
-`sudo vi /etc/apache2/sites-available/000-default.conf`,
+`sudo vi /etc/apache2/sites-available/000-default.conf`
 
