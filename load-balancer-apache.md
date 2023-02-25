@@ -47,7 +47,7 @@ sudo systemctl restart apache2
 
 `sudo vi /etc/apache2/sites-available/000-default.conf`
 
-5. Add this configuration into this section <VirtualHost *:80>  </VirtualHost>
+-  Add this configuration into this section <VirtualHost *:80>  </VirtualHost>
 ```
 
 <Proxy "balancer://mycluster">
@@ -69,3 +69,10 @@ sudo systemctl restart apache2
   `sudo systemctl restart apache2`
 
 ![](assets/4.png)
+
+>**bytraffic** balancing method will distribute the incoming load between your Web Servers according to the current traffic load. We can control in which proportion the traffic must be distributed by **loadfactor** parameter.
+
+5. Verify that our configuration works – try to access your LB’s public IP address or Public DNS name from your browser:
+   
+   <http://Load-Balancer-Public-IP-Address-or-Public-DNS-Name/index.php>
+
