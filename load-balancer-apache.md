@@ -126,4 +126,9 @@ It shall work!!
 
 ![](assets/10.png)
 
+Congratulations!!!
+You have just implemented a Load balancing Web Solution for your DevOps team.
+**AWESOME JOB**
+
+
 
