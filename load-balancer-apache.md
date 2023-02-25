@@ -62,3 +62,8 @@ sudo systemctl restart apache2
         ProxyPass / balancer://mycluster/
         ProxyPassReverse / balancer://mycluster/
 ```
+![](assets/5.png)
+
+- Restart apache server
+
+![](assets/4.png)
