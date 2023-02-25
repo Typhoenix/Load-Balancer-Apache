@@ -65,5 +65,7 @@ sudo systemctl restart apache2
 ![](assets/5.png)
 
 - Restart apache server
+  
+  `sudo systemctl restart apache2`
 
 ![](assets/4.png)
