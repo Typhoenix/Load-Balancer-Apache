@@ -92,3 +92,27 @@ Try to refresh your browser page <http://Load-Balancer-Public-IP-Address-or-Publ
 
 If you have configured everything correctly – your users will not even notice that their requests are served by more than one server.
 
+### Optional Step – Configure Local DNS Names Resolution
+Sometimes it is tedious to remember and switch between IP addresses, especially if you have a lot of servers under your management.
+What we can do, is to configure local domain name resolution. The easiest way is to use **/etc/hosts** file, although this approach is not very scalable, it is very easy to configure and shows the concept well. So let us configure the IP address to domain name mapping for our LB.
+
+`sudo vi /etc/hosts`
+
+- Add 2 records into this file with the Local IP address and arbitrary name for both of your Web Servers
+```
+<WebServer1-Private-IP-Address> Web1
+<WebServer2-Private-IP-Address> Web2
+```
+Like so:
+
+![](assets/8.png)
+
+- Now you can update your LB config file with those names instead of IP addresses.
+- 
+`sudo vi /etc/apache2/sites-available/000-default.conf`
+
+![](assets/9.png)
+
+
+
+
