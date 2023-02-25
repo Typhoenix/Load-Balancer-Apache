@@ -68,7 +68,7 @@ sudo systemctl restart apache2
   
   `sudo systemctl restart apache2`
 
-![](assets/4.png)
+![](assets/6.png)
 
 >**bytraffic** balancing method will distribute the incoming load between your Web Servers according to the current traffic load. We can control in which proportion the traffic must be distributed by **loadfactor** parameter.
 
@@ -76,3 +76,10 @@ sudo systemctl restart apache2
    
    <http://Load-Balancer-Public-IP-Address-or-Public-DNS-Name/index.php>
 
+![](assets/7.png)
+
+>Note: If in Project-7 you mounted */var/log/httpd/* from your Web Servers to the NFS server – unmount them and make sure that each Web Server has its own log directory.
+
+`sudo umount -f /var/www/httpd`
+
+`sudo systemctl restart htttp`
