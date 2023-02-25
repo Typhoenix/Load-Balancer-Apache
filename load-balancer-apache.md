@@ -83,3 +83,12 @@ sudo systemctl restart apache2
 `sudo umount -f /var/www/httpd`
 
 `sudo systemctl restart htttp`
+
+6. Open two ssh/Putty consoles for both Web Servers and run the following command:
+
+`sudo tail -f /var/log/httpd/access_log`
+
+Try to refresh your browser page <http://Load-Balancer-Public-IP-Address-or-Public-DNS-Name/index.php> several times and ensure both servers receive HTTP GET requests from your LB – new records must appear in each server’s log file. The number of requests to each server will be approximately the same since we set loadfactor to the same value for both servers – it means that traffic will be distributed evenly between them.
+
+If you have configured everything correctly – your users will not even notice that their requests are served by more than one server.
+
