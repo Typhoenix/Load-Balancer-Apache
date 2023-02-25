@@ -124,7 +124,6 @@ It shall work!!
 
 ### Now our set-up looks like this:
 
-
-
+![](assets/10.png)
 
 
