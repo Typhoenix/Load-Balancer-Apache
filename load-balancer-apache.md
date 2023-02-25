@@ -22,7 +22,7 @@ Install Apache Load Balancer on Project-8-apache-lb server and configure it to p
 
 ```
 #Install apache2
-sudo apt update
+sudo apt update.
 sudo apt install apache2 -y
 sudo apt-get install libxml2-dev
 
