@@ -113,6 +113,17 @@ Like so:
 
 ![](assets/9.png)
 
+You can try to curl your Web Servers from LB locally 
+
+`curl http://Web1` or 
+`curl http://Web2`
+
+It shall work!!
+
+>**Remember**, this is only an internal configuration and it is also local to your LB server, these names will neither be ‘resolvable’ from other servers internally nor from the Internet.
+
+
+
 
 
 
